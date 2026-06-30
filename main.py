@@ -32,16 +32,17 @@ def save_memory(promp):
     return response
 
 
-while True:
-    message = input("You: ")
+if __name__ == "__main__":
+    while True:
+        message = input("You: ")
 
-    if message.lower() in ('adios', 'salir', 'exit'):
-        print("Adios Sr.")
-        break
+        if message.lower() in ('adios', 'salir', 'exit'):
+            print("Adios Sr.")
+            break
 
-    response_assitant = save_memory(message)
+        response_assitant = save_memory(message)
 
-    print(f"Mimmo: {response_assitant}")
+        print(f"Mimmo: {response_assitant}")
     
 
 
